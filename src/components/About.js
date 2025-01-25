@@ -1,11 +1,13 @@
-import { image } from '../data/user';
+import React from "react";
+import {image} from "../data/user";
 
-export default function About() {
+function About() {
   return (
-    <div>
-      <img src={image} alt="Profile" />
+    <div id="about">
       <h2>About Me</h2>
-      <p>I made this.</p>
+      <p>I Made This</p>
+      <img src={image} alt="I made this" />
     </div>
   );
 }
+export default About;

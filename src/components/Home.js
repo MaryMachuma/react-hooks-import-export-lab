@@ -1,10 +1,13 @@
-import { username, city } from '../data/user';
+import React from "react";
+import {username, city} from "../data/user";
 
-export default function Home() {
+function Home() {
   return (
-    <div>
-      <h1>Liza is a Web Developer from {city}</h1>
-      <p>Welcome to my portfolio!</p>
+    <div id="home">
+      <h1>
+        {username} is a Web Developer from {city}
+      </h1>
     </div>
   );
 }
+export default Home;

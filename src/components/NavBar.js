@@ -1,10 +1,10 @@
-export default function NavBar() {
+import React from "react";
+
+function NavBar() {
   return (
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
+      <a href="#home">I'm a link!</a>
     </nav>
   );
 }
+export default NavBar;
