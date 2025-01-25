@@ -1,11 +1,11 @@
-import React from "react";
+import { image } from '../data/user';
 
-function About() {
+export default function About() {
   return (
-    <div id="about">
+    <div>
+      <img src={image} alt="Profile" />
       <h2>About Me</h2>
-      <p>I Made This</p>
-      <img src={image} alt="I made this" />
+      <p>I made this.</p>
     </div>
   );
 }

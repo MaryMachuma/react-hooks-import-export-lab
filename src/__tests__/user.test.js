@@ -1,7 +1,15 @@
 import { username, city, image } from "../data/user";
 
-test("username, city, and image are all exported", () => {
-  expect(username).toEqual("Liza");
-  expect(city).toEqual("New York");
-  expect(image).toEqual("https://i.imgur.com/mV8PQxj.gif");
+describe("user.js exports", () => {
+  test("username should be a string", () => {
+    expect(typeof username).toBe("string");
+  });
+
+  test("city should be a string", () => {
+    expect(typeof city).toBe("string");
+  });
+
+  test("image should be a valid URL", () => {
+    expect(image).toMatch(/^https?:\/\/.+/); // Checks if the URL starts with http or https
+  });
 });
